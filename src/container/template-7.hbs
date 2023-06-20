@@ -1,0 +1,38 @@
+<div class="page">
+    <div class="page_block">
+        <div class="page_content">
+
+            {{> headerDarc}}
+        </div>
+    </div>
+</div>
+
+<section class="page_block">
+    <div class="hero">
+        {{#with hero}}
+        {{> hero title=title description=description}}
+        <a class="button" href="button.url">{{button.text}}</a>
+        {{/with}}
+    </div>
+</section>
+
+
+<div class="page_block">
+    {{#with about}}
+    <div class="about">
+        <div class="about_heading">{{heading}}</div>
+        <div class="about_info">{{info}}</div>
+    </div>
+    {{/with}}
+</div>
+
+{{> articleCardDark}}
+
+<div class="page_bl">
+    {{> divider }}
+</div>
+
+
+<div class="page_block">
+    {{> footerDarc}}
+</div>

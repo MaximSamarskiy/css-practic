@@ -1,0 +1,21 @@
+<div class="page_block">
+    <div class="our_arti">
+        <h2 class="list_title">Our Articles</h2>
+        <button class="category_button">Viev All</button>
+    </div>
+</div>
+
+<div class="page_block">
+    <div class="blog">
+        {{#each articles}}
+        <div class="card">
+            <img class="card_photo" src="{{photo}}" alt="#">
+            <h2 class="card_name">{{name}}</h2>
+            <p class="card_description">{{description}}</p>
+            <div class="card_button">
+                <a href="#" class="card_btn">Read All</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
