@@ -1,0 +1,37 @@
+{{#with header}}
+<header class="header">
+    <div class="header_logo">
+
+        <div class="badge_logo">Logo</div>
+
+    </div>
+
+    <div class="header_links ">
+        {{#each links}}
+        <div class="header_right">
+            <div class="nav_links">
+                <a href="{{url}}" class="nav_links">{{text}}</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</header>
+{{> divider}}
+
+
+{{#with ad}}
+<div class="online">
+    <div class="ad">
+        <div class="ad_logo">
+            <div class="logo_ad">Ad</div>
+        </div>
+        <div class="ad_text">
+            <a href="{{url}}" class="ad_text">{{text}}</a>
+        </div>
+    </div>
+    {{/with}}
+    <div class="userOnline">
+        <div class="user">User online:{{userOnline}}</div>
+    </div>
+</div>
+{{/with}}
